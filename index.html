@@ -13,21 +13,123 @@
 
 </head>
 
-<body>
-  <h1>em nộp git trước, cảm ơn mentor nhé</h1>
+<body class="w-50 m-auto">
+  <h1 style="padding: 50px 0;">em nộp git trước, cảm ơn mentor nhé</h1>
+
+  <section class="top_body container ">
+    <div class="d-flex align-items-center pb-3">
+      <div class="w-75 me-2">
+        <input type="number" class="form-control " id="soN" aria-describedby="helpId" placeholder="nhập số n bất kì" />
+      </div>
+      <button class="w-25 btn btn-success " onclick="themSo()"> Thêm Số</button>
+    </div>
+
+
+    <div class="ketQuaSoN  rounded bg-danger bg-gradient bg-opacity-95 p-4 w-100 m-auto text-white text-center">Hiển thị kết quả ở đây
+    </div>
+  </section>
+
+  <!--! bootstrap -->
+  <div style="padding: 70px 0;" class="accordion" id="accordionExample">
+    <!--! Câu 1  -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne"> Câu 1: Tổng số dương </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+
+        <div class="accordion-body">
+
+          <div class="kqCau1  rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="tongSoDuong()">Tính Tổng</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--! Câu 2  -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Câu 2: Đếm số dương
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class="kqCau2  rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="demSoDuong()">Đếm</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--! câu 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Câu 3: Tìm số nhỏ nhất
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class="kqCau3  rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="timSoNhoNhat()">Tìm</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--! câu 4 -->
+    <div class="accordion-item">
+      <!-- đổi 2 id theo thứ tự - đổi 2 ô collapseThu tu -->
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Câu 4: Tìm số dương nhỏ nhất
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class="kqCau4  rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="timSoDuongNhoNhat()">Tìm</button>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
 
 
 
 
-  
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="./index.js"></script>
 </body>
