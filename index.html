@@ -14,23 +14,24 @@
 </head>
 
 <body class="w-50 m-auto">
-  <h1 style="padding: 50px 0;">em nộp git trước, cảm ơn mentor nhé</h1>
+  <h1 style="padding: 50px 0;"></h1>
 
   <section class="top_body container ">
     <div class="d-flex align-items-center pb-3">
       <div class="w-75 me-2">
         <input type="number" class="form-control " id="soN" aria-describedby="helpId" placeholder="nhập số n bất kì" />
       </div>
-      <button class="w-25 btn btn-success " onclick="themSo()"> Thêm Số</button>
+      <button class="w-25 btn btn-success " id="l1" onclick="themSo()"> Thêm Số</button>
     </div>
 
 
-    <div class="ketQuaSoN  rounded bg-danger bg-gradient bg-opacity-95 p-4 w-100 m-auto text-white text-center">Hiển thị kết quả ở đây
+    <div class="ketQuaSoN  rounded bg-danger bg-gradient bg-opacity-95 p-4 w-100 m-auto text-white text-center">Hiển thị
+      kết quả ở đây
     </div>
   </section>
 
   <!--! bootstrap -->
-  <div style="padding: 70px 0;" class="accordion" id="accordionExample">
+  <div style="padding: 70px 0; " class="accordion " id="accordionExample">
     <!--! Câu 1  -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
@@ -114,6 +115,160 @@
         </div>
       </div>
     </div>
+
+    <!--! câu 5 -->
+    <div class="accordion-item">
+      <!-- đổi 2 id theo thứ tự - đổi 2 ô collapseThu tu -->
+      <h2 class="accordion-header" id="heading5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+          aria-expanded="false" aria-controls="collapse5">
+          Câu 5: Tìm số chẵn cuối cùng
+        </button>
+      </h2>
+      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class="kqCau5 rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="timSoChanCuoiCung()">Tìm</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--! câu 6 -->
+    <div class="accordion-item">
+      <!-- đổi 2 id theo thứ tự - đổi 2 ô collapseThu tu -->
+      <h2 class="accordion-header" id="heading6">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+          aria-expanded="false" aria-controls="collapse6">
+          Câu 6: Đổi chỗ 2 giá trị trong mảng theo vị trí
+        </button>
+      </h2>
+
+      <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class=" d-flex mb-2  ">
+            <input type="number" class="form-control me-4  " id="viTri1" aria-describedby="helpId"
+              placeholder="Nhập số vị trí 1" />
+            <input type="number" class="form-control  " id="viTri2" aria-describedby="helpId"
+              placeholder="Nhập số vị trí 2" />
+          </div>
+
+          <div class="kqCau6  rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="doiChoViTri()">Đổi</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--! câu 7 -->
+    <div class="accordion-item">
+      <!-- đổi 2 id theo thứ tự - đổi 2 ô collapseThu tu -->
+      <h2 class="accordion-header" id="heading7">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
+          aria-expanded="false" aria-controls="collapse7">
+          Câu 7: Sắp xếp tăng dần
+        </button>
+      </h2>
+      <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class="kqCau7 rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="sapXepTangDan()">Xếp</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--! câu 8 -->
+    <div class="accordion-item">
+      <!-- đổi 2 id theo thứ tự - đổi 2 ô collapseThu tu -->
+      <h2 class="accordion-header" id="heading8">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8"
+          aria-expanded="false" aria-controls="collapse8">
+          Câu 8: Tìm Số Nguyên Tố Đầu Tiên
+        </button>
+      </h2>
+      <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class="kqCau8 rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="soNguyenToDauTien()">Tìm</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--! câu 9 -->
+    <div class="accordion-item">
+      <!-- đổi 2 id theo thứ tự - đổi 2 ô collapseThu tu -->
+      <h2 class="accordion-header" id="heading9">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9"
+          aria-expanded="false" aria-controls="collapse9">
+          Câu 9: Đếm Số Nguyên
+        </button>
+      </h2>
+      <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class=" d-flex mb-2  ">
+            <input type="number" class="form-control me-4  " id="soCau9" aria-describedby="helpId"
+              placeholder="Nhập số bất kì" />
+
+
+            <div class="kqCau9Mot rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị
+              kết
+              quả ở đây
+            </div>
+          </div>
+          <button class="w-100 btn btn-info me-4 " style="margin: 25px 0;" onclick="themSoCau9()">Thêm</button>
+
+
+          <div class="kqCau9 rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="demSoNguyen()">Đếm</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!--! câu 10 -->
+    <div class="accordion-item">
+      <!-- đổi 2 id theo thứ tự - đổi 2 ô collapseThu tu -->
+      <h2 class="accordion-header" id="heading10">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10"
+          aria-expanded="false" aria-controls="collapse10">
+          Câu 10: So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn
+        </button>
+      </h2>
+      <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <div class="kqCau10 rounded bg-warning bg-opacity-75 p-3 w-100 m-auto text-white text-center ">Hiển thị kết
+            quả ở đây
+          </div>
+          <button class="w-100 btn btn-success " style="margin: 25px 0;" onclick="soSanhAmDuong()">So Sánh</button>
+
+        </div>
+      </div>
+    </div>
+
 
 
   </div>
